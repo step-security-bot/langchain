@@ -3,7 +3,7 @@
 ARG POETRY_HOME=/opt/poetry
 
 # Use the Python base image
-FROM python:3.11.2-bullseye AS builder
+FROM python:3.11.2-bullseye@sha256:21ce92a075cf9c454a936f925e058b4d8fc0cfc7a05b9e877bed4687c51a5658 AS builder
 
 # Define the version of Poetry to install (default is 1.4.2)
 ARG POETRY_VERSION=1.4.2
